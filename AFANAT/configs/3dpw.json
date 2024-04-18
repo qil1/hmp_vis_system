@@ -1,0 +1,11 @@
+{
+    "data_dir": "./data/3DPW/sequenceFiles",
+    "save_dir_name": "3dpw",
+    "joint_num": 23,
+    "t_pred": 30,
+    "t_pred_lst": [30,5,10],
+    "S_model_dims": 128,
+    "is_mlp_bn": true,
+    "mlp_dropout": 0.7,
+    "num_epoch": 60
+}
