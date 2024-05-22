@@ -160,7 +160,7 @@ class WorkThread(QThread):
                                 p3d_out_all_4 = rearrange(p3d_out_all_4, 'b t (c d) -> b t c d', d=3)
                                 pred = torch.zeros([1, t_pred, joint_num+1, 3])
                                 pred[:, :, 1:, :] = p3d_out_all_4[:, condition:]
-                                pose_shift = pred[:, shift-1, :, :].reshape(-1, 3).detach().numpy()*1000
+                                pose_shift = pred[:, shift-1, :, :].reshape(-1, 3).detach().numpy()  #*1000
                                 pose_shift[:, :] += self.joint_pos[iPerson][iFrame+shift][:3]*1000 - self.joint_pos[0][iFrame+shift][:3]*1000
                                 poses_shift.append(pose_shift)
                             else:
