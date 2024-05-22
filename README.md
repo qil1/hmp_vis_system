@@ -2,7 +2,7 @@
 ```
 python main.py
 ```
-download 3dpw test set (include videos) [here]() and put it into ./3dpw_dataset directory
+you should download 3dpw test set (include videos) [here](https://pan.baidu.com/s/1NOkVD8SBPXTzndE5gIpUsw?pwd=jq2m) and put them into ./3dpw_dataset directory
 
 ```
 3dpw_dataset
